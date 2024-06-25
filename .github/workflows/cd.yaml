@@ -1,0 +1,11 @@
+name: Dragon's Den CD Workflow
+
+on:
+  workflow_dispatch:
+    branches: [release]
+jobs:
+  release:
+    runs-on: fedora-40
+    strategy:
+      matrix:
+        node-version: [18.x]

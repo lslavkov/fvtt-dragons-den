@@ -1,0 +1,38 @@
+{
+  "printWidth": 120,
+  "trailingComma": "es5",
+  "endOfLine": "lf",
+  "tabWidth": 2,
+  "singleQuote": false,
+  "semi": true,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": [
+        "*.scss",
+        "*.css"
+      ],
+      "options": {
+        "requirePragma": false,
+        "parser": "scss"
+      }
+    },
+    {
+      "files": [
+        "*.yml"
+      ],
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "requirePragma": false,
+        "parser": "html",
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    }
+  ]
+}

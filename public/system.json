@@ -1,0 +1,44 @@
+{
+  "id": "dragons-den",
+  "title": "Dragon's Den",
+  "description": "A community contributed game system for Dragon's Den (Dračí Doupě)",
+  "authors": [
+    {
+      "name": "Lazar Slavković Raco",
+      "discord": "fingerzz.5383"
+    }
+  ],
+  "url": "https://github.com/lslavkov/fvtt-dragons-den",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "bugs": "https://github.com/lslavkov/fvtt-dragons-den/issues",
+  "changelog": "CHANGELOG.md",
+  "media": [
+    {
+    }
+  ],
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": 12,
+    "verified": "12.317"
+  },
+  "esmodules": ["module/dragons-den.mjs"],
+  "styles": ["css/dragons-den.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "socket": false,
+  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
+  "download": "This must link to a .zip file of the current version",
+  "background": "",
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power"
+}
