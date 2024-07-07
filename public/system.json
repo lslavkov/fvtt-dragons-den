@@ -20,10 +20,14 @@
   "version": "0.1.0",
   "compatibility": {
     "minimum": 12,
-    "verified": "12.317"
+    "verified": "12.328"
   },
-  "esmodules": ["module/dragons-den.mjs"],
-  "styles": ["css/dragons-den.css"],
+  "esmodules": [
+    "module/dragons-den.mjs"
+  ],
+  "styles": [
+    "css/dragons-den.css"
+  ],
   "languages": [
     {
       "lang": "en",
@@ -37,8 +41,20 @@
   "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
   "download": "This must link to a .zip file of the current version",
   "background": "",
-  "gridDistance": 1,
-  "gridUnits": "m",
+  "grid.distance": 1,
+  "grid.units": "m",
   "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power"
+  "secondaryTokenAttribute": "power",
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "json",
+        "hbs"
+      ],
+      "paths": [
+        "lang",
+        "templates"
+      ]
+    }
+  }
 }
