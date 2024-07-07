@@ -1,6 +1,6 @@
 {
   "dataPath": "/path/to/foundry/data",
-  "systemName": "dragons-den",
+  "systemName": "dragons-den-2",
   "repository": "https://github.com/lslavkov/fvtt-dragons-den",
   "rawURL": "https://github.com/lslavkov/fvtt-dragons-den/releases/latest/download",
   "downloadURL": "https://github.com/lslavkov/fvtt-dragons-den/releases/download"
