@@ -60,7 +60,7 @@ async function rebuild_pack(name) {
       "--type",
       "System",
       "--id",
-      "dragons-den",
+      "dragons-den-2",
       "-n",
       name,
       "--in",
@@ -77,7 +77,7 @@ async function rebuild_pack(name) {
 async function export_pack(name) {
   console.log(chalk.green(`Extracting ${chalk.blueBright(name)}`));
   // TODO: specifying output directory doesn't seem to work?
-  cp.spawnSync("npx", ["fvtt", "package", "unpack", "--type", "System", "--id", "lancer", "-n", name, "--yaml"], {
+  cp.spawnSync("npx", ["fvtt", "package", "unpack", "--type", "System", "--id", "dragons-den-2", "-n", name, "--yaml"], {
     stdio: "inherit",
     shell: true,
   });
@@ -155,7 +155,7 @@ async function linkUserData() {
       fs.existsSync(path.resolve(".", "dist", "module.json")) ||
       fs.existsSync(path.resolve(".", "src", "module.json"))
     ) {
-      destDir = "modules";
+      destDir = "module";
     } else if (
       fs.existsSync(path.resolve(".", "dist", "system.json")) ||
       fs.existsSync(path.resolve(".", "src", "system.json"))
