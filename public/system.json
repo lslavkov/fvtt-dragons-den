@@ -1,7 +1,7 @@
 {
   "id": "dragons-den-2",
   "title": "Dragon's Den 2nd edition",
-  "description": "A community contributed game system for Dragon's Den (Dračí Doupě)",
+  "description": "A community contributed game system for Dragon's Den 2nd edition (Dračí Doupě 2 edice)",
   "authors": [
     {
       "name": "Lazar Slavković Raco",
@@ -13,20 +13,16 @@
   "readme": "README.md",
   "bugs": "https://github.com/lslavkov/fvtt-dragons-den/issues",
   "changelog": "CHANGELOG.md",
-  "media": [
-    {
-    }
-  ],
   "version": "0.1.0",
   "compatibility": {
     "minimum": 12,
     "verified": "12.328"
   },
   "esmodules": [
-    "module/dragons-den.mjs"
+    "dragons-den-2.mjs"
   ],
   "styles": [
-    "css/dragons-den.css"
+    "dragons-den-2.css"
   ],
   "languages": [
     {
@@ -41,8 +37,10 @@
   "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
   "download": "This must link to a .zip file of the current version",
   "background": "",
-  "grid.distance": 1,
-  "grid.units": "m",
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "flags": {
