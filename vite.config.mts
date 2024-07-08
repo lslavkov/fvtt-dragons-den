@@ -1,17 +1,17 @@
-import * as Vite from "vite";
-import path from "node:path";
-import checker from "vite-plugin-checker";
+import type { UserConfig } from "vite";
 import { visualizer } from "rollup-plugin-visualizer";
+import checker from "vite-plugin-checker";
+import path from "path";
 
-const config: Vite.UserConfig = {
+const config: UserConfig = {
   root: "src/",
+  base: "/systems/dragons-den-2/",
   publicDir: path.resolve(__dirname, "public"),
-  base: "/systems/fvtt-dragons-den",
   server: {
     port: 30001,
     open: true,
     proxy: {
-      "^(?!/systems/fvtt-dragons-den)": "http://localhost:30000/",
+      "^(?!/systems/dragons-den-2)": "http://localhost:30000/",
       "/socket.io": {
         target: "ws://localhost:30000",
         ws: true,
@@ -34,10 +34,10 @@ const config: Vite.UserConfig = {
     emptyOutDir: false,
     sourcemap: true,
     lib: {
-      name: "lancer",
+      name: "dragons-den-2",
       entry: path.resolve(__dirname, "src/dragons-den-2.ts"),
       formats: ["es"],
-      fileName: "lancer",
+      fileName: "dragons-den-2",
     },
   },
   esbuild: {
@@ -47,7 +47,6 @@ const config: Vite.UserConfig = {
   plugins: [
     checker({
       typescript: true,
-      // svelte: { root: __dirname },
     }),
     visualizer({
       gzipSize: true,
