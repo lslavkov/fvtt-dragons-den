@@ -1,1 +1,1 @@
-import "./dragons-den-2.scss"
+import "./styles/dragons-den-2.scss"
