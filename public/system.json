@@ -2,41 +2,11 @@
   "id": "dragons-den-2",
   "title": "Dragon's Den 2nd edition",
   "description": "A community contributed game system for Dragon's Den 2nd edition (Dračí Doupě 2 edice)",
-  "authors": [
-    {
-      "name": "Lazar Slavković Raco",
-      "discord": "fingerzz.5383"
-    }
-  ],
-  "url": "https://github.com/lslavkov/fvtt-dragons-den",
-  "license": "LICENSE",
-  "readme": "README.md",
-  "bugs": "https://github.com/lslavkov/fvtt-dragons-den/issues",
-  "changelog": "CHANGELOG.md",
   "version": "0.1.0",
   "compatibility": {
     "minimum": 12,
     "verified": "12.328"
   },
-  "esmodules": [
-    "dragons-den-2.mjs"
-  ],
-  "styles": [
-    "styles/dragons-den-2.css"
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
-  "packs": [],
-  "packFolders": [],
-  "socket": false,
-  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
-  "download": "This must link to a .zip file of the current version",
-  "background": "",
   "grid": {
     "distance": 1,
     "units": "m"
@@ -54,5 +24,12 @@
         "templates"
       ]
     }
-  }
+  },
+  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
+  "download": "This must link to a .zip file of the current version",
+  "url": "https://github.com/lslavkov/fvtt-dragons-den",
+  "license": "https://github.com/lslavkov/fvtt-dragons-den/blob/main/LICENSE.md",
+  "readme": "https://github.com/lslavkov/fvtt-dragons-den/blob/main/README.md",
+  "bugs": "https://github.com/lslavkov/fvtt-dragons-den/issues",
+  "changelog": "https://github.com/lslavkov/fvtt-dragons-den/blob/main/CHANGELOG.md"
 }
