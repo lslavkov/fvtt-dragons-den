@@ -1,1 +1,12 @@
 @import "fonts";
+
+/* import globals */
+@import "global/grid";
+@import "global/flex";
+@import "global/window";
+
+/* import components*/
+@import "components/effects";
+@import "components/forms";
+@import "components/items";
+@import "components/resource";
