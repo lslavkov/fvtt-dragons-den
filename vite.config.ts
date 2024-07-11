@@ -9,7 +9,7 @@ const config: UserConfig = {
   publicDir: path.resolve(__dirname, "public"),
   server: {
     port: 30001,
-    open: true,
+    open: "/game",
     proxy: {
       "^(?!/systems/dragons-den-2)": "http://localhost:30000/",
       "/socket.io": {
